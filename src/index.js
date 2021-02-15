@@ -46,7 +46,7 @@ fetch(breedUrl, {method: 'GET'})
 
 function createDogList(dogBreedArray) {
     const dogLiStringArray = dogBreedArray.map(function(breed) {
-        return `<li>$(breed)</li>`
+        return `<li>${(breed)}</li>`
     })
     return dogLiStringArray.join(' ')
 }
