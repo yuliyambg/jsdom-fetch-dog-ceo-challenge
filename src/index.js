@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const breedDropdown = document.getElementById('breed-dropdown')
 
     dogBreedUl.addEventListener('click', function(event) {
-        event.target.style.color = 'red'
+        event.target.style.color = 'firebrick'
     })
 
     breedDropdown.addEventListener('change', function(event) {
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const filteredBreeds = allBreeds.filter((breed) => breed.startsWith(letter))
         dogBreedUl.innerHTML = createDogList(filteredBreeds)
     })
-
 
 fetch(imgUrl, {method: 'GET'})
 .then((response) => {
